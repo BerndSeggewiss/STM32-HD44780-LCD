@@ -54,11 +54,11 @@ void LCD_TestAll(void)
 		LCD_putString(" ");
 	}
 	HAL_Delay(2000);
-	// Test 6: Put string in first line of the LCD. Excess text will be truncated
+	// Test 6: Put string in first line of the LCD. Excess text will be truncated.
 	LCD_Clear();
 	LCD_putString("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789");
 	HAL_Delay(1500);
-	// Test 7: Set se cursor to home position and display 'Home!' at this
+	// Test 7: Set the cursor to home position and display 'Home!' at this
 	// position
 	LCD_CursorHome();
 	LCD_putString("Home!");
@@ -69,13 +69,12 @@ void LCD_TestAll(void)
 	LCD_CursorShift(1, 10); LCD_putString("B");
 	HAL_Delay(1500);
 	// Test 9: Displays text 'Smiley: ' and special char 'smiley'
-	// after this
 	LCD_Clear();
 	LCD_CursorShift(1, 0);
 	LCD_putString("Smiley: ");
 	LCD_putChar(0);
 	HAL_Delay(1500);
-	// Test 10: New special chrarcter 'Nabla' programmmed in slot 3. This has replaced
+	// Test 10: New special character 'Nabla' programmmed in slot 3. This has replaced
 	// default special character 'Beta'
 	LCD_Clear();
 	char CharNabla[8] = { 0x1F, 0x0E, 0x04, 0x00, 0x00, 0x00, 0x00, 0x00 };
@@ -91,7 +90,7 @@ void LCD_TestAll(void)
 	    LCD_putString(" ");
 	}
 	HAL_Delay(2000);
-	// Test 12: Programmed the and displayed the default special characters
+	// Test 12: Programmed and displayed the default special characters
 	LCD_createDefaultCustomChars();
 	LCD_Clear();
 	for (uint8_t i = 0; i < 8; ++i)
