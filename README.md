@@ -42,7 +42,7 @@ int main(void) {
 
 ## Documentation
 
-Detailed documentation and usage instructions can be found in the [`docu`](docu) folder.
+Detailed documentation and usage instructions can be found in the folder 'docu'.
 
 ## Project Structure
 
@@ -52,8 +52,4 @@ Detailed documentation and usage instructions can be found in the [`docu`](docu)
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-
-## Contact & Contributing
-
-Questions or suggestions: [BerndSeggewiss](https://github.com/BerndSeggewiss)
+This project is licensed under the MIT License.
