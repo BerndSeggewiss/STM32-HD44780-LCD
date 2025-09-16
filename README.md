@@ -1,10 +1,11 @@
 # STM32-HD44780-LCD
 
 This project provides a C library for controlling an HD44780-based LCD display with an STM32 microcontroller.
+It was created and tested with the L476RG type.
 
 ## Features
 
-- Supports both 4-bit and 8-bit modes
+- Supports 4-bit mode
 - Data and command transmission
 - Cursor positioning
 - Text display and custom characters
